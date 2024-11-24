@@ -28,7 +28,7 @@ function drawScene() {
   const proportion = options.viewSize.x / 7;
 
   // draw sky
-  color("blue");
+  color("light_cyan");
   rect(0, 0, gameWidth, gameHeight);
 
   // draw ground
@@ -36,6 +36,7 @@ function drawScene() {
   rect(0, gameHeight - 10, gameWidth, 10);
 
   // draw grocery store
+  color("black")
   text("store", 63, 38);
   color("light_blue");
   rect(3 * proportion, gameHeight - 30, proportion, 20);
